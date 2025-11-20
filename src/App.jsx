@@ -1,71 +1,107 @@
+import Hero from './components/Hero'
+import ValueProps from './components/ValueProps'
+import Process from './components/Process'
+import Estimator from './components/Estimator'
+import Footer from './components/Footer'
+
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-      {/* Subtle pattern overlay */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.05),transparent_50%)]"></div>
+    <div className="min-h-screen bg-slate-950 text-white">
+      <Hero />
+      <ValueProps />
 
-      <div className="relative min-h-screen flex items-center justify-center p-8">
-        <div className="max-w-2xl w-full">
-          {/* Header with Flames icon */}
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center justify-center mb-6">
-              <img
-                src="/flame-icon.svg"
-                alt="Flames"
-                className="w-24 h-24 drop-shadow-[0_0_25px_rgba(59,130,246,0.5)]"
-              />
+      <section className="py-16 md:py-24 bg-slate-950">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <h3 className="text-2xl font-semibold">Cosa significa “sito web moderno”</h3>
+              <ul className="mt-4 space-y-2 text-white/80">
+                <li>• Responsive e mobile-friendly</li>
+                <li>• Velocissimo (<2s)</li>
+                <li>• SEO-friendly</li>
+                <li>• Design contemporaneo</li>
+                <li>• Sicuro (HTTPS, GDPR)</li>
+                <li>• Multilingua</li>
+              </ul>
             </div>
-
-            <h1 className="text-5xl font-bold text-white mb-4 tracking-tight">
-              Flames Blue
-            </h1>
-
-            <p className="text-xl text-blue-200 mb-6">
-              Build applications through conversation
-            </p>
-          </div>
-
-          {/* Instructions */}
-          <div className="bg-slate-800/50 backdrop-blur-sm border border-blue-500/20 rounded-2xl p-8 shadow-xl mb-6">
-            <div className="flex items-start gap-4 mb-6">
-              <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-lg flex items-center justify-center font-bold">
-                1
-              </div>
-              <div>
-                <h3 className="font-semibold text-white mb-1">Describe your idea</h3>
-                <p className="text-blue-200/80 text-sm">Use the chat panel on the left to tell the AI what you want to build</p>
-              </div>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <h3 className="text-2xl font-semibold">Problemi dei siti obsoleti</h3>
+              <ul className="mt-4 space-y-2 text-white/80">
+                <li>• Perdono clienti (75% giudica dal design)</li>
+                <li>• Non funzionano su mobile (60% del traffico)</li>
+                <li>• Non si posizionano (93% parte da un motore di ricerca)</li>
+              </ul>
             </div>
-
-            <div className="flex items-start gap-4 mb-6">
-              <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-lg flex items-center justify-center font-bold">
-                2
-              </div>
-              <div>
-                <h3 className="font-semibold text-white mb-1">Watch it build</h3>
-                <p className="text-blue-200/80 text-sm">Your app will appear in this preview as the AI generates the code</p>
-              </div>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <h3 className="text-2xl font-semibold">Metriche & Performance</h3>
+              <ul className="mt-4 space-y-2 text-white/80">
+                <li>• <2s tempo di caricamento</li>
+                <li>• +50% tasso di conversione medio</li>
+                <li>• 3–5x lead con SEO mirato Ticino/CH</li>
+              </ul>
             </div>
-
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-lg flex items-center justify-center font-bold">
-                3
-              </div>
-              <div>
-                <h3 className="font-semibold text-white mb-1">Refine and iterate</h3>
-                <p className="text-blue-200/80 text-sm">Continue the conversation to add features and make changes</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Footer */}
-          <div className="text-center">
-            <p className="text-sm text-blue-300/60">
-              No coding required • Just describe what you want
-            </p>
           </div>
         </div>
-      </div>
+      </section>
+
+      <Process />
+      <Estimator />
+
+      <section className="py-16 md:py-24 bg-slate-900">
+        <div className="mx-auto max-w-7xl px-6">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Per chi è ideale</h2>
+          <p className="mt-3 text-white/70 max-w-2xl">E-commerce, siti aziendali, portfolio, landing page. Settori: sanità, educazione, finanza, manifattura, corporate.</p>
+
+          <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 text-center text-white/80">
+            <div className="rounded-lg border border-white/10 bg-white/5 p-4">E-commerce</div>
+            <div className="rounded-lg border border-white/10 bg-white/5 p-4">Aziendale</div>
+            <div className="rounded-lg border border-white/10 bg-white/5 p-4">Portfolio</div>
+            <div className="rounded-lg border border-white/10 bg-white/5 p-4">Landing</div>
+            <div className="rounded-lg border border-white/10 bg-white/5 p-4">Educazione</div>
+            <div className="rounded-lg border border-white/10 bg-white/5 p-4">Finanza</div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-slate-950">
+        <div className="mx-auto max-w-7xl px-6">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Credibilità</h2>
+          <p className="mt-3 text-white/70">Ciobai collabora con aziende e istituti svizzeri come:</p>
+          <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
+            {['Tecnico Informatico','Adwater','TisaLabs','Cagnavin','Drytech',''].map((c, i) => (
+              <div key={i} className="rounded-xl border border-white/10 bg-white/5 px-4 py-6 text-white/80">
+                {c || 'Partner' + (i+1)}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-slate-900">
+        <div className="mx-auto max-w-7xl px-6">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight">FAQ principali</h2>
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <h3 className="text-xl font-semibold">Tempi</h3>
+              <p className="text-white/70 mt-2">4–8 settimane. Possibile consegna veloce in 2–3 settimane.</p>
+            </div>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <h3 className="text-xl font-semibold">Mobile e SEO</h3>
+              <p className="text-white/70 mt-2">Siti sempre mobile-friendly. SEO incluso.</p>
+            </div>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <h3 className="text-xl font-semibold">CMS</h3>
+              <p className="text-white/70 mt-2">CMS per aggiornamenti autonomi. Supporto continuo disponibile.</p>
+            </div>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <h3 className="text-xl font-semibold">Hosting e dominio</h3>
+              <p className="text-white/70 mt-2">Possibilità di gestione completa di hosting e dominio.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </div>
   )
 }
