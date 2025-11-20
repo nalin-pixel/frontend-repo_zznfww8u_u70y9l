@@ -32,7 +32,7 @@ function Hero() {
               Consulenza gratuita
             </a>
           </div>
-          <p className="mt-4 text-sm text-white/60">Tempo di caricamento <2s • SEO avanzato • Multilingua • CMS</p>
+          <p className="mt-4 text-sm text-white/60">Tempo di caricamento &lt; 2s • SEO avanzato • Multilingua • CMS</p>
         </div>
       </div>
     </section>
