@@ -3,24 +3,28 @@
 > vite
 
 
-  VITE v5.4.20  ready in 179 ms
+  VITE v5.4.20  ready in 181 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.0.250:3000/
-8:07:30 PM [vite] Pre-transform error: Transform failed with 1 error:
-/home/workspace/src/App.jsx:20:38: ERROR: Expected identifier but found "2"
-8:07:31 PM [vite] Internal server error: Transform failed with 1 error:
-/home/workspace/src/App.jsx:20:38: ERROR: Expected identifier but found "2"
+8:09:11 PM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/components/Hero.jsx:35:74: ERROR: Expected identifier but found "2"
+8:09:12 PM [vite] ✨ new dependencies optimized: lucide-react
+8:09:12 PM [vite] ✨ optimized dependencies changed. reloading
+8:09:12 PM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/components/Hero.jsx:35:74: ERROR: Expected identifier but found "2"
+8:09:13 PM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/Hero.jsx:35:74: ERROR: Expected identifier but found "2"
   Plugin: vite:esbuild
-  File: /home/workspace/src/App.jsx:20:38
+  File: /home/workspace/src/components/Hero.jsx:35:74
   
   Expected identifier but found "2"
-  18 |                <ul className="mt-4 space-y-2 text-white/80">
-  19 |                  <li>• Responsive e mobile-friendly</li>
-  20 |                  <li>• Velocissimo (<2s)</li>
-     |                                        ^
-  21 |                  <li>• SEO-friendly</li>
-  22 |                  <li>• Design contemporaneo</li>
+  33 |              </a>
+  34 |            </div>
+  35 |            <p className="mt-4 text-sm text-white/60">Tempo di caricamento <2s • SEO avanzato • Multilingua • CMS</p>
+     |                                                                            ^
+  36 |          </div>
+  37 |        </div>
   
       at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
       at /home/workspace/node_modules/esbuild/lib/main.js:755:50
@@ -32,41 +36,18 @@
       at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
       at Readable.push (node:internal/streams/readable:390:5)
       at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
-8:07:32 PM [vite] Internal server error: Transform failed with 1 error:
-/home/workspace/src/App.jsx:20:38: ERROR: Expected identifier but found "2"
+8:09:18 PM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/Hero.jsx:35:74: ERROR: Expected identifier but found "2"
   Plugin: vite:esbuild
-  File: /home/workspace/src/App.jsx:20:38
+  File: /home/workspace/src/components/Hero.jsx:35:74
   
   Expected identifier but found "2"
-  18 |                <ul className="mt-4 space-y-2 text-white/80">
-  19 |                  <li>• Responsive e mobile-friendly</li>
-  20 |                  <li>• Velocissimo (<2s)</li>
-     |                                        ^
-  21 |                  <li>• SEO-friendly</li>
-  22 |                  <li>• Design contemporaneo</li>
-  
-      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
-      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
-      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
-      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
-      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
-      at Socket.emit (node:events:508:28)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
-      at Readable.push (node:internal/streams/readable:390:5)
-      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
-8:07:52 PM [vite] Internal server error: Transform failed with 1 error:
-/home/workspace/src/App.jsx:20:38: ERROR: Expected identifier but found "2"
-  Plugin: vite:esbuild
-  File: /home/workspace/src/App.jsx:20:38
-  
-  Expected identifier but found "2"
-  18 |                <ul className="mt-4 space-y-2 text-white/80">
-  19 |                  <li>• Responsive e mobile-friendly</li>
-  20 |                  <li>• Velocissimo (<2s)</li>
-     |                                        ^
-  21 |                  <li>• SEO-friendly</li>
-  22 |                  <li>• Design contemporaneo</li>
+  33 |              </a>
+  34 |            </div>
+  35 |            <p className="mt-4 text-sm text-white/60">Tempo di caricamento <2s • SEO avanzato • Multilingua • CMS</p>
+     |                                                                            ^
+  36 |          </div>
+  37 |        </div>
   
       at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
       at /home/workspace/node_modules/esbuild/lib/main.js:755:50

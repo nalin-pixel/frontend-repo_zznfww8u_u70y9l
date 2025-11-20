@@ -17,7 +17,7 @@ function App() {
               <h3 className="text-2xl font-semibold">Cosa significa “sito web moderno”</h3>
               <ul className="mt-4 space-y-2 text-white/80">
                 <li>• Responsive e mobile-friendly</li>
-                <li>• Velocissimo (<2s)</li>
+                <li>• Velocissimo (&lt; 2s)</li>
                 <li>• SEO-friendly</li>
                 <li>• Design contemporaneo</li>
                 <li>• Sicuro (HTTPS, GDPR)</li>
@@ -35,7 +35,7 @@ function App() {
             <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
               <h3 className="text-2xl font-semibold">Metriche & Performance</h3>
               <ul className="mt-4 space-y-2 text-white/80">
-                <li>• <2s tempo di caricamento</li>
+                <li>• &lt; 2s tempo di caricamento</li>
                 <li>• +50% tasso di conversione medio</li>
                 <li>• 3–5x lead con SEO mirato Ticino/CH</li>
               </ul>
